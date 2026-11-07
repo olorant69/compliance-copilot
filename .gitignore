@@ -218,3 +218,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Node.js / React (frontend) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+frontend/dist/
+.vite/
+
+# --- macOS ---
+.DS_Store
+
+# --- Notes personnelles (privées, non publiées) ---
+NOTES-APPRENTISSAGE.md
