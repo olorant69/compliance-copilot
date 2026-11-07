@@ -233,3 +233,6 @@ frontend/dist/
 
 # --- Notes personnelles (privées, non publiées) ---
 NOTES-APPRENTISSAGE.md
+
+# --- Corpus réglementaire : PDF non versionnés (droits), seul l'inventaire sources.yaml l'est ---
+data/corpus/*.pdf

@@ -1,0 +1,155 @@
+# Inventaire du corpus réglementaire de ComplianceCopilot (module 1, V1).
+# Les fichiers PDF ne sont pas versionnés dans Git (droits d'auteur de certains documents) :
+# cet inventaire permet de retrouver chaque texte à sa source officielle.
+#
+# Champs :
+#   id                 identifiant court utilisé dans l'application et dans les citations
+#   titre              titre officiel
+#   type               loi | ordonnance | accord_international | autoregulation | standard_international
+#   juridiction        CH | CH-US | international
+#   rs                 numéro du Recueil systématique du droit fédéral (si applicable)
+#   etat               date « État le » ou de mise à jour du document téléchargé
+#   valide_depuis      date à partir de laquelle cette version s'applique (si connue)
+#   valide_jusqu_au    date de fin d'application connue (null = pas de fin connue)
+#   fichier            nom du fichier dans data/corpus/
+#   source             éditeur officiel
+#   url                page officielle (à compléter quand indiqué)
+#   droits             libre (texte officiel non protégé) | reserves (diffusion soumise à autorisation)
+#   telecharge_le      date du téléchargement
+#   remarques          points d'attention pour la mise à jour du corpus
+
+documents:
+  - id: LBA
+    titre: "Loi fédérale du 10 octobre 1997 concernant la lutte contre le blanchiment d'argent et le financement du terrorisme (Loi sur le blanchiment d'argent, LBA)"
+    type: loi
+    juridiction: CH
+    rs: "955.0"
+    etat: 2026-10-01
+    valide_depuis: 2026-10-01
+    valide_jusqu_au: null
+    fichier: LBA_955.0_etat-2026-10-01.pdf
+    source: Fedlex (Chancellerie fédérale)
+    url: "https://www.fedlex.admin.ch  # rechercher RS 955.0 — URL exacte à compléter"
+    droits: libre
+    telecharge_le: 2026-11-07
+    remarques: "Version révisée entrée en vigueur avec la LTPM le 1er octobre 2026."
+
+  - id: OBA-FINMA
+    titre: "Ordonnance de la FINMA du 3 juin 2015 sur la lutte contre le blanchiment d'argent et le financement du terrorisme dans le secteur financier (OBA-FINMA)"
+    type: ordonnance
+    juridiction: CH
+    rs: "955.033.0"
+    etat: 2023-01-01
+    valide_depuis: 2023-01-01
+    valide_jusqu_au: 2026-12-31
+    fichier: OBA-FINMA_955.033.0_etat-2023-01-01.pdf
+    source: Fedlex (Chancellerie fédérale)
+    url: "https://www.fedlex.admin.ch  # rechercher RS 955.033.0 — URL exacte à compléter"
+    droits: libre
+    telecharge_le: 2026-11-07
+    remarques: "Révision partielle prévue au 1er janvier 2027 (audition FINMA mai-juin 2026) : télécharger la nouvelle version à cette date."
+
+  - id: LTPM
+    titre: "Loi fédérale du 26 septembre 2025 sur la transparence des personnes morales et l'identification des ayants droit économiques (LTPM)"
+    type: loi
+    juridiction: CH
+    rs: null
+    etat: 2026-10-01
+    valide_depuis: 2026-10-01
+    valide_jusqu_au: null
+    fichier: LTPM_etat-2026-10-01.pdf
+    source: Fedlex (Chancellerie fédérale)
+    url: "https://www.fedlex.admin.ch  # rechercher LTPM — numéro RS et URL à compléter"
+    droits: libre
+    telecharge_le: 2026-11-07
+    remarques: "Nouvelle loi entrée en vigueur le 1er octobre 2026 (registre de transparence des ayants droit économiques)."
+
+  - id: CDB-20
+    titre: "Convention relative à l'obligation de diligence des banques (CDB 20) du 13 juin 2018"
+    type: autoregulation
+    juridiction: CH
+    rs: null
+    etat: 2018-06-13
+    valide_depuis: 2020-01-01
+    valide_jusqu_au: null
+    fichier: CDB-20.pdf
+    source: Association suisse des banquiers (ASB)
+    url: "https://www.swissbanking.ch"
+    droits: reserves
+    telecharge_le: 2026-11-07
+    remarques: "Dispositions révisées annoncées pour le 1er janvier 2027, en même temps que la révision de l'OBA-FINMA : vérifier à cette date."
+
+  - id: FATCA-M2
+    titre: "Accord du 14 février 2013 entre la Suisse et les États-Unis d'Amérique sur leur coopération visant à faciliter la mise en œuvre du FATCA (modèle 2)"
+    type: accord_international
+    juridiction: CH-US
+    rs: "0.672.933.63"
+    etat: 2016-02-29
+    valide_depuis: 2014-06-02
+    valide_jusqu_au: 2026-12-31
+    fichier: FATCA-M2_0.672.933.63_etat-2016-02-29.pdf
+    source: Fedlex (Chancellerie fédérale)
+    url: "https://www.fedlex.admin.ch  # rechercher RS 0.672.933.63 — URL exacte à compléter"
+    droits: libre
+    telecharge_le: 2026-11-07
+    remarques: "Remplacé par l'accord modèle 1 (FATCA-M1) à partir du 1er janvier 2027 (date prévue)."
+
+  - id: FATCA-M1
+    titre: "Accord du 27 juin 2024 entre la Suisse et les États-Unis d'Amérique visant à améliorer la conformité fiscale internationale et à mettre en œuvre le FATCA (modèle 1)"
+    type: accord_international
+    juridiction: CH-US
+    rs: null
+    etat: 2024-06-27
+    valide_depuis: 2027-01-01
+    valide_jusqu_au: null
+    fichier: FATCA-M1_accord-2024-06-27.pdf
+    source: Conseil fédéral (documents de consultation du 7 mars 2025)
+    url: "https://www.admin.ch/gov/fr/accueil/documentation/communiques.msg-id-104413.html"
+    droits: libre
+    telecharge_le: 2026-11-07
+    remarques: "Pas encore en vigueur : application prévue au 1er janvier 2027. Remplacer par la version du Recueil systématique une fois publiée."
+
+  - id: GAFI
+    titre: "Recommandations du GAFI – Normes internationales sur la lutte contre le blanchiment de capitaux et le financement du terrorisme et de la prolifération"
+    type: standard_international
+    juridiction: international
+    rs: null
+    etat: 2026-06-01
+    valide_depuis: 2026-06-01
+    valide_jusqu_au: null
+    fichier: GAFI-Recommandations_2026-06.pdf
+    source: Groupe d'action financière (GAFI / FATF)
+    url: "https://www.fatf-gafi.org/fr/publications/Recommandationsgafi/Recommandations-gafi.html"
+    droits: reserves
+    telecharge_le: 2026-11-07
+    remarques: "Version française « mise à jour juin 2026 » (date exacte du mois : 1er par convention)."
+
+  - id: LEmb
+    titre: "Loi fédérale du 22 mars 2002 sur l'application de sanctions internationales (Loi sur les embargos, LEmb)"
+    type: loi
+    juridiction: CH
+    rs: "946.231"
+    etat: 2023-07-01
+    valide_depuis: 2023-07-01
+    valide_jusqu_au: null
+    fichier: LEmb_946.231_etat-2023-07-01.pdf
+    source: Fedlex (Chancellerie fédérale)
+    url: "https://www.fedlex.admin.ch  # rechercher RS 946.231 — URL exacte à compléter"
+    droits: libre
+    telecharge_le: 2026-11-07
+    remarques: "Vérifier sur Fedlex qu'aucune version plus récente n'existe."
+
+  - id: O-Ukraine
+    titre: "Ordonnance du 4 mars 2022 instituant des mesures en lien avec la situation en Ukraine"
+    type: ordonnance
+    juridiction: CH
+    rs: "946.231.176.72"
+    etat: 2026-11-05
+    valide_depuis: 2026-11-05
+    valide_jusqu_au: null
+    fichier: O-Ukraine_946.231.176.72_etat-2026-11-05.pdf
+    source: Fedlex (Chancellerie fédérale) / SECO
+    url: "https://www.seco.admin.ch/fr/mesures-en-lien-situation-ukraine"
+    droits: libre
+    telecharge_le: 2026-11-07
+    remarques: "Texte modifié très fréquemment : prévoir des mises à jour régulières. Ingestion limitée aux articles principaux (annexes de marchandises exclues)."
